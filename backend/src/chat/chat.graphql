@@ -1,0 +1,24 @@
+type Chat {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateChatInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateChatInput {
+  id: Int!
+}
+
+type Query {
+  chat: [Chat]!
+  chat(id: Int!): Chat
+}
+
+type Mutation {
+  createChat(createChatInput: CreateChatInput!): Chat!
+  updateChat(updateChatInput: UpdateChatInput!): Chat!
+  removeChat(id: Int!): Chat
+}
