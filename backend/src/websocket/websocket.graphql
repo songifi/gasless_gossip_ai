@@ -1,0 +1,24 @@
+type Websocket {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateWebsocketInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateWebsocketInput {
+  id: Int!
+}
+
+type Query {
+  websocket: [Websocket]!
+  websocket(id: Int!): Websocket
+}
+
+type Mutation {
+  createWebsocket(createWebsocketInput: CreateWebsocketInput!): Websocket!
+  updateWebsocket(updateWebsocketInput: UpdateWebsocketInput!): Websocket!
+  removeWebsocket(id: Int!): Websocket
+}
