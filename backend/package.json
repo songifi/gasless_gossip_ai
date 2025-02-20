@@ -8,7 +8,7 @@
   "scripts": {
     "typeorm": "typeorm-ts-node-commonjs",
     "migration:generate": "npm run typeorm migration:generate -- -d backend/src/config/ormconfig.ts backend/src/migrations/MigrationName",
-    "migration:run": "npm run typeorm migration:run -- -d backend/src/config/ormconfig.ts",
+    "migration:run": "npm run typeorm migration:run -- -d src/config/ormconfig.ts",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
