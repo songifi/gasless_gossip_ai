@@ -1,3 +1,7 @@
 /server/node_modules
 
 /frontend/node_modules
+
+/ml-services/text-prediction-service/.venv/
+
+ml-services/sticker-generation-service/.venv/
