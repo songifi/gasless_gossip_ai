@@ -36,6 +36,12 @@ To initialize package directory.
 uv init text-prediction-service
 ```
 
+To create virtual environment.
+
+```bash
+uv venv
+```
+
 To make typical directories **data**, **models**, **notebooks**.
 
 ```bash
@@ -69,7 +75,7 @@ uv add ruff
 uv add 'ruff== 0.9.7'
 ```
 
-Note: Ensure that you `cd sticker-generation-service` as you run the above commands.
+Note: Ensure that you `cd Text-Prediction service` as you run the above commands.
 
 
 # Library Requirements
