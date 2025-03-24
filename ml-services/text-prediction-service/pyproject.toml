@@ -1,7 +1,7 @@
 [project]
 name = "text-prediction-service"
 version = "0.1.0"
-description = "Add your description here"
+description = "Text prediction service with Redis caching"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -11,4 +11,5 @@ dependencies = [
     "torch>=2.6.0",
     "transformers>=4.50.0",
     "uvicorn>=0.34.0",
+    "redis>=5.0.0",
 ]
