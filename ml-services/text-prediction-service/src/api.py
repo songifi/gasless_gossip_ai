@@ -3,9 +3,16 @@
 from fastapi import HTTPException
 from pydantic import BaseModel
 from src.predictor import Predictor
+from src.cache import RedisCache
+from src.cached_predictor import CachedPredictor
 
-# Instance of Bert Model.
-nextWord = Predictor()
+# Created base predictor - Instance of Bert Model.
+base_predictor = Predictor()
+# Created cache
+redis_cache = RedisCache()
+
+# Create cached predictor with Redis and in-memory fallback
+nextWord = CachedPredictor(base_predictor, redis_cache)
 
 # Pydantic Model FOr Data Validation.
 class NextWordInput(BaseModel):
